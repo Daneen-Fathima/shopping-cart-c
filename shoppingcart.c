@@ -17,8 +17,8 @@ scanf("%d", &quantity);
 
 total=price*quantity;
 
-printf("You have bought %d %s", quantity, item);
-printf("%c%.3f", currency, total); 
+printf("You have bought %d %s\n", quantity, item);
+printf("The total is: %c%.3f\n", currency, total);  
 
 return 0; 
 
