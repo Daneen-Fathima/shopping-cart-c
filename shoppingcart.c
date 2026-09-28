@@ -8,14 +8,19 @@ int main()
     float total= 0.0f;
 printf("What item would you like to buy?:");
 fgets(item,60,stdin);
-printf("What is the price for each:");
+
+printf("What is the price for each?:");
 scanf("%f", &price);
+
 printf("How many would you like:");
 scanf("%d", &quantity);
-total=price*quantity;
-printf("%f", &price);
-return 0;
 
+total=price*quantity;
+
+printf("You have bought %d %s", quantity, item);
+printf("%c%.3f", currency, total); 
+
+return 0; 
 
 
 
